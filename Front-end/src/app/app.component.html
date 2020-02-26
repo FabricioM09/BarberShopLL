@@ -1,5 +1,6 @@
-<header class="style-header" style="width: 100%;">
-  <nav class="navbar navbar-expand-lg  style-nav">
+
+<header class="style-header">
+  <mdb-navbar SideClass="navbar navbar-expand-lg fixed-top scrolling-navbar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="">
         <img src="../assets/images/menu (1).png" alt="">
@@ -7,68 +8,72 @@
     </button>
       
     <div class="col-lg-auto m-0 d-none d-sm-none d-md-none d-lg-block">
-      <img class ="logo"src="../assets/images/logo.png" alt="">
+      <a href="#"><img class ="logo" src="../assets/images/logo.png" alt=""></a>
     </div>
-    <h1 class="col-lg-2 typography d-none d-sm-none d-md-none d-lg-block">Barbería La Lucha</h1>
+    <h1 class="col-lg-3 typography d-none d-sm-none d-md-none d-lg-block"><a href="#" style="color: white;">Barbería La Lucha</a></h1>
     
-    <div class="col-lg-8 collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="col-lg-7 collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link typography" href="#">Inicio <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Sobre Nosotros <span class="sr-only">(current)</span></a>
+        <li class="nav-item active d-none d-sm-none d-md-none d-lg-block">
+          <a class="nav-link typography" mdbPageScroll href="#sobre_nosotros">Sobre Nosotros</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Galeria <span class="sr-only">(current)</span></a>
+        <li class="nav-item active d-block d-sm-block d-md-block d-lg-none">
+          <a class="nav-link typography" mdbPageScroll href="#sobre-nosotros">Sobre Nosotros</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Servicio <span class="sr-only">(current)</span></a>
+        <li class="nav-item active ">
+          <a class="nav-link typography" mdbPageScroll href="#galery">Galeria</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Horario <span class="sr-only">(current)</span></a>
+        <li class="nav-item active ">
+          <a class="nav-link typography" mdbPageScroll href="#services">Servicios</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>
+        <li class="nav-item active ">
+          <a class="nav-link typography" mdbPageScroll href="#horario">Horario</a>
+        </li>
+        <li class="nav-item active ">
+          <a class="nav-link typography" mdbPageScroll href="#contact">Contacto</a>
         </li>
       </ul>
     </div>
-  </nav>
-  
+  </mdb-navbar>
 </header>
 
-<section class="container-fluid">
+
+<section class="container-fluid ">
   <div class="row">
-    <img class="img-principal" src="../assets/images/1.jpg">
+    <img class="img-principal d-none d-sm-none d-md-none d-lg-block" src="../assets/images/1.JPG">
+    <img class="img-principal-phone d-sm-relative d-md-block d-lg-none" src="../assets/images/2.jpg">
     <div class="mx-auto d-none d-sm-none d-md-block">
-      <img class="logo-big" src="../assets/images/logo.png" > 
+      <img class="logo-big animated wow bounce" data-wow-delay="1s" src="../assets/images/logo.png" > 
     </div>
   </div>
-  
 </section>
 
-<section class="container d-none d-sm-none d-md-block d-lg-block" style="padding-left:  0%;">
+<section id="sobre_nosotros" class="container d-none d-sm-none d-md-block d-lg-block mb-5" style="padding-left:  0%;">
   <div class="row">
-    <div class="col-md-6">
-      <img class="img-principal" src="../assets/images/principal.jpg">
+    <div class="col-md-6 ">
+      <img class="img-principal-1 animated wow bounce" src="../assets/images/principal.jpg">
     </div>
     <div class="mx-auto col-md-6">
       <hr>
-      <img class="row mx-auto title-sobre_nosotros" src="../assets/images/sobre_Nosotros.png" alt="">
-      <p class="sobre-nosotros-text"><br>Esta instalación también proporcionará actualizaciones<br> periódicas. No tiene que volver a esta página e instalar nuevamente (¡no funcionará!) Cuando se lance una nueva <br> versión de GIMP. En cambio, si su distribución y / o escritorio tiene un buen soporte para flatpak, debería proponer <br> realizar actualizaciones.cambio, si su distribución y / o escritorio tiene un buen soporte para flatpak, debería proponer realizar actualizaciones.<br> 
+      <img class="row mx-auto title-sobre-nosotros animated wow bounce" src="../assets/images/sobre_Nosotros.png" alt="">
+      <p class="sobre-nosotros-text animated wow bounce"><br>Esta instalación también proporcionará actualizaciones<br> periódicas. No tiene que volver a esta página e instalar nuevamente (¡no funcionará!) Cuando se lance una nueva <br> versión de GIMP. En cambio, si su distribución y / o escritorio tiene un buen soporte para flatpak, debería proponer <br> realizar actualizaciones.cambio, si su distribución y / o escritorio tiene un buen soporte para flatpak, debería proponer realizar actualizaciones.<br> 
       </p>
       <hr>
     </div>
   </div>
 </section> 
 
-<section class="container-fluid d-block d-sm-block d-md-none" style=" margin: 0; padding: 0;">
-  <div class="row img-principal-phone" style="width: 100%; margin-left: 0px;">
-      <img class="mx-auto logo-big-phone" src="../assets/images/logo.png">
+<section id="sobre-nosotros" class="container-fluid d-block d-sm-block d-md-none" style=" margin: 0; padding: 0;">
+  <div class="row img-principal-phone " style="width: 100%; margin-left: 0px;">
+      <img class="mx-auto logo-big-phone animated wow bounce" src="../assets/images/logo.png">
       <div class="container" style="position: relative; top: -15%;" >
         <div class="row">
-          <img class="mx-auto title-sobre_nosotros" src="../assets/images/sobre_Nosotros.png" >
-          <p class="sobre-nosotros-text-phone ml-2" style="width: 100%;"><br>Esta instalación también proporcionará actualizaciones<br> periódicas. No tiene que volver a esta página e instalar nuevamente (¡no funcionará!) Cuando se lance una nueva <br> versión de GIMP. En cambio, si su distribución y / o escritorio tiene un buen soporte para flatpak, debería proponer <br> realizar actualizaciones.<br> 
+          <img class="mx-auto title-sobre-nosotros animated wow bounce" src="../assets/images/sobrenosotros.png" >
+          <p class="sobre-nosotros-text-phone ml-2 animated wow bounce" style="width: 100%;"><br>Esta instalación también proporcionará actualizaciones<br> periódicas. No tiene que volver a esta página e instalar nuevamente (¡no funcionará!) Cuando se lance una nueva <br> versión de GIMP. En cambio, si su distribución y / o escritorio tiene un buen soporte para flatpak, debería proponer <br> realizar actualizaciones.jbjbjbkjbkjbjkbkjkjbjkjk jk jbjbjkbjkbkjlssgyukkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk<br> 
+            proporcionará actualizaciones<br> periódicas. No tiene que volver a esta página e instalar nuevamente (¡no funcionará!) Cuando se lance una nueva <br> versión de GIMP. En cambio, si su distribución y / o escritorio tiene un buen soporte para flatpak, debería proponer <br> realizar actualizaciones.jbjbjbkjbkjbjkbkjkjbjkjk jk jbjbjkbjkbkjlssgyukkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk<br> 
           </p>
         </div>
        
@@ -77,8 +82,76 @@
   </div>
 </section> 
 
+<app-gallery id="galery">
+  
+</app-gallery>
 
+<section id="services" class="container">
+  <div class="row">
+    <img class="mx-auto logo-services  animated wow bounce" src="../assets/images/servicios.png" alt="">
+  </div>
+  <div class="row mt-5 mb-5  animated wow bounce">
+    <p class="col-12 text-services text-center">
+      <img class="icons-services " src="../assets/images/icon-1.png" alt="">
+      Corte...............................................................C3000
+    </p>
+    
+    <p class="col-12 text-services text-center">
+      <img class="icons-services " src="../assets/images/icon-2.jpg" alt="" >
+      Corte + Barba .............................................C3500
+    </p>
 
+    <p class="col-12 text-services text-center">
+      <img class="icons-services " src="../assets/images/icon-3.jpg" alt="" >
+      Corte + Barba .............................................C3500
+    </p>
 
+    <p class="col-12 text-services text-center">
+      <img class="icons-services " src="../assets/images/icon-4.jpg" alt="" >
+      Corte + Barba .............................................C3500
+  </div>
+</section>
 
+<section id="horario" class="container-fluid schedule pb-5">
+  <div class="row  animated wow bounce">
+    <img class="mx-auto logo-gallery mt-5" src="../../../assets/images/horario.png" alt="">
+  </div>
 
+  <p class="text-schedule text-center mt-4  animated wow bounce">
+    <i class="fas fa-clock"></i> De lunes a sabado de 8:am a 5pm
+  </p>
+</section>
+
+<section id="contact" class="container-fluid mb-3">
+  <div class="row">
+    <img class="mx-auto logo-contact mt-5 animated wow bounce" src="../../../assets/images/contacto.png" alt="">
+  </div>
+  <div class="row mt-5">
+    <div class="col-sm-12 col-md-12 col-lg-6  animated wow bounce">
+      <p class="text-center text-contact">
+        <img class="icons-socials " src="../assets/images/facebook.png" alt="">
+        <a class="" href="https://www.facebook.com/LLBarberia/" style="color: black;"> La Lucha Barbería</a> 
+      </p>
+      <p class="text-center text-contact">
+        <img class="icons-socials" src="../assets/images/instagram.png" alt="">
+        <a href="https://www.instagram.com/luisf_jimenez98/?hl=es-la" style="color: black;"> luisf_jimenez98</a> 
+      </p>
+      <p class="text-contact text-center" style="color: black;">
+        <img class="icons-socials" src="../assets/images/whatsapp.png" alt="">
+         84437820 
+      </p>
+    </div>
+    
+      <div class="col-sm-12 col-md-12 col-lg-6 m-0 p-0  animated wow bounce" style="text-align:center;">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.931393162381!2d-82.81824825027128!3d8.885970993629591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa5cffa4222e465%3A0x505963a8a9ede443!2sLa%20Lucha%20Barber%C3%ADa!5e0!3m2!1ses!2scr!4v1582309085122!5m2!1ses!2scr" width="500" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    
+  </div>
+</section >
+
+<footer>
+  <p class="text-center p-0 m-0" style="color: white;" >
+  2020 © TODOS LOS DERECHOS RESERVADOS
+  </p>
+  <p class="text-center p-0 m-0" style="color: white;"> Designed by Fabricio Morales</p>
+</footer>

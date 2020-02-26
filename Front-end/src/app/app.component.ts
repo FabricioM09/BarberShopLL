@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MatCardModule} from '@angular/material/card';
 
 
 @Component({
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   title = 'BarberShopLL';
-s
+
+    
 }
